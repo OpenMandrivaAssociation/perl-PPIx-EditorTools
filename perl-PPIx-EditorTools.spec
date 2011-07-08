@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Introduces a temporary variable using PPI
 License:    GPL+ or Artistic
@@ -13,7 +13,10 @@ Source0:    http://www.cpan.org/modules/by-module/PPIx/%{upstream_name}-%{upstre
 
 BuildRequires: perl(Class::XSAccessor)
 BuildRequires: perl(PPI)
+BuildRequires: perl(PPI::Find)
 BuildRequires: perl(Test::Differences)
+BuildRequires: perl(Test::Most)
+BuildRequires: perl(Test::NoWarnings) >= 0.084
 BuildRequires: perl(Module::Build::Compat)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
