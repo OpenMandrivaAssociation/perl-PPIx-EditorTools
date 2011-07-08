@@ -1,9 +1,9 @@
 %define upstream_name    PPIx-EditorTools
-%define upstream_version 0.10
+%define upstream_version 0.15
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Introduces a temporary variable using PPI
 License:    GPL+ or Artistic
@@ -42,6 +42,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes README
+%doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
